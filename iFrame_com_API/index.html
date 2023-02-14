@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        #secao1 {
+                align-items: center;
+                text-align: center;
+        }
+        #link{
+            width: 450px;
+            height: 25px;
+        }
+        #pesquisar{
+            width: 100px;
+            height: 35px;
+        }
+        #stats{
+            width: 100px;
+            height: 35px;
+        }
+        h1{
+            text-align: center;
+        }
+        #full{
+            background-color: brown;
+        }
+        #diminuir{
+            background-color: green;
+        }
+        #aumentar{
+            background-color: aquamarine;
+        }
+        #tabela{
+            padding-left: 30%;
+        }
+        .titulos{
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insira um link de um video abaixo:</h1><br>
+    <section id="secao1">
+        <input type="text" id="link" placeholder="Insira o Link do video">
+        <input type="button" id="pesquisar" value="Pesquisar">&nbsp;<input type="button" id="stats" value="Estatisticas" onclick="estatisticas()"><br><br><br>
+        <p id="player"></p>
+        <p uk-margin id="botoes"></p>
+        <div id="tempo"></div>
+        <table id="tabela"></table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
